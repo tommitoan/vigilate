@@ -1,0 +1,1 @@
+docker run --name vigilate-host -e POSTGRES_USER=tcs -e POSTGRES_PASSWORD=tcs -d -p 5432:5432 -v postgres-data:/var/lib/postgresql/data postgres:16-alpine
