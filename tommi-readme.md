@@ -10,3 +10,4 @@ Migrate: `soda create -e development --debug`
 Create dev database: `soda create -e development --debug`
 
 RUN: `./run.sh`
+TEST PUSHER: `cd ipe`, `./ipe`
