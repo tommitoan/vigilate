@@ -3,7 +3,7 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/v5"
 	"github.com/tsawler/vigilate/internal/models"
 	"log"
 	"net/http"
@@ -31,6 +31,11 @@ type jsonResp struct {
 	OldStatus     string    `json:"old_status"`
 	NewStatus     string    `json:"new_status"`
 	LastCheck     time.Time `json:"last_check"`
+}
+
+// ScheduledCheck performs a scheduled check on a host service by id
+func (repo *DBRepo) ScheduledCheck(hostServiceID int) {
+
 }
 
 // TestCheck manually tests a host service and sends JSON response
